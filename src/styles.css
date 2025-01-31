@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif; /* Fuente general */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+#gifContainerImg {
+    width: 60%;
+    height: auto; /* Ajuste automático de altura */
+}
+
+@media (max-width: 768px) {
+    #gifContainerImg {
+        width: 80%; /* Aumentar el tamaño en pantallas más pequeñas */
+    }
+
+    #messageContainer {
+        font-size: 24px; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    button {
+        padding: 8px 16px; /* Ajustar el padding de los botones */
+        font-size: 14px; /* Tamaño de fuente más pequeño en móviles */
+    }
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border: none; /* Sin borde por defecto */
+    border-radius: 10px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease, transform 0.2s; /* Transiciones suaves */
+}
+
+#siBtn {
+    background-color: #009705; /* Verde */
+    color: white;
+}
+
+#noBtn {
+    background-color: #FF5733; /* Rojo */
+    color: white;
+}
+
+#siBtn:hover {
+    background-color: #053a03; /* Cambia a otro color en hover */
+    transform: scale(1.05); /* Efecto de aumento en hover */
+}
+
+#noBtn:hover {
+    background-color: #641e0d; /* Cambia a otro color en hover */
+    transform: scale(1.05); /* Efecto de aumento en hover */
+}
+
+.bg-green {
+    background-color: #ffffff; /* Color de fondo */
+}
+
+#messageContainer {
+    font-size: 30px;
+    color: #FF0000; /* Color rojo */
+    text-shadow: 2px 2px 4px #000; /* Sombra de texto */
+    animation: pulse 0.5s infinite alternate; /* Animación de palpitación */
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1); /* Zoom más pequeño */
+    }
+}
