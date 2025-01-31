@@ -41,7 +41,7 @@ document.getElementById('siBtn').addEventListener('click', function() {
 
     // Después de 7 segundos, redirigir a otra página
     setTimeout(() => {
-        window.location.href = 'https://www.ejemplo.com'; // Cambia la URL de destino
+        window.location.href = 'page/index.html'; 
     }, 7000);
 });
 
